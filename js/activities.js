@@ -11,7 +11,6 @@ function parseTweets(runkeeper_tweets) {
  
 	var complete_array = tweet_array.filter(tweet => tweet.source === "completed_event");
 	var activityCounts = {};
-	//IF TIME CAN CHANGE BELOW TO NORMAL FOR LOOP
 	for(var element of complete_array){
 		var act = element.activityType;
 		var dist = element.distance;
